@@ -9,7 +9,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        os-version: [ubuntu-latest]
+        os-version: [ubuntu-latest, windows-latest, macos-latest]
     steps:
       - name: Show
         run: ls -alF /usr/local/bin
