@@ -11,11 +11,11 @@ jobs:
       matrix:
         os-version: [ubuntu-latest, windows-latest, macos-latest]
     steps:
-      - name: Show
-        run: ls -alF /usr/local/bin
-
       - name: SAM??
         run: which sam
 
       - name: SAM version
         run: sam --version
+
+      - name: Show
+        run: ls -alF /usr/local/bin
